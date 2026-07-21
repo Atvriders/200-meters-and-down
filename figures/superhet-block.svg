@@ -1,0 +1,121 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+<title>Figure 3.1 — Superheterodyne receiver block diagram</title>
+
+<g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- Antenna -->
+  <line x1="35" y1="140" x2="35" y2="95"/>
+  <line x1="35" y1="95" x2="20" y2="75"/>
+  <line x1="35" y1="95" x2="35" y2="70"/>
+  <line x1="35" y1="95" x2="50" y2="75"/>
+
+  <!-- Antenna -> RF amp -->
+  <line x1="35" y1="140" x2="60" y2="140"/>
+  <path d="M60,140 l-8,-5 l0,10 z" fill="currentColor" stroke="none"/>
+
+  <!-- RF AMP -->
+  <rect x="60" y="110" width="80" height="60"/>
+
+  <!-- RF amp -> mixer -->
+  <line x1="140" y1="140" x2="156" y2="140"/>
+  <path d="M156,140 l-8,-5 l0,10 z" fill="currentColor" stroke="none"/>
+
+  <!-- MIXER -->
+  <rect x="156" y="110" width="80" height="60"/>
+
+  <!-- mixer -> IF amp -->
+  <line x1="236" y1="140" x2="252" y2="140"/>
+  <path d="M252,140 l-8,-5 l0,10 z" fill="currentColor" stroke="none"/>
+
+  <!-- IF AMP -->
+  <rect x="252" y="110" width="80" height="60"/>
+
+  <!-- IF amp -> detector -->
+  <line x1="332" y1="140" x2="348" y2="140"/>
+  <path d="M348,140 l-8,-5 l0,10 z" fill="currentColor" stroke="none"/>
+
+  <!-- DETECTOR -->
+  <rect x="348" y="110" width="80" height="60"/>
+
+  <!-- detector -> AF amp -->
+  <line x1="428" y1="140" x2="444" y2="140"/>
+  <path d="M444,140 l-8,-5 l0,10 z" fill="currentColor" stroke="none"/>
+
+  <!-- AF AMP -->
+  <rect x="444" y="110" width="80" height="60"/>
+
+  <!-- AF amp -> speaker -->
+  <line x1="524" y1="140" x2="540" y2="140"/>
+  <path d="M540,140 l-8,-5 l0,10 z" fill="currentColor" stroke="none"/>
+
+  <!-- Speaker glyph -->
+  <path d="M540,125 L555,125 L575,108 L575,172 L555,155 L540,155 Z"/>
+  <path d="M585,128 Q595,140 585,152" stroke-width="1.6"/>
+  <path d="M593,120 Q607,140 593,160" stroke-width="1.6"/>
+
+  <!-- LOCAL OSCILLATOR box, below mixer -->
+  <rect x="156" y="250" width="80" height="60"/>
+  <path d="M166,270 q7,-12 14,0 t14,0 t14,0" stroke-width="1.6"/>
+
+  <!-- LO -> mixer (second input) -->
+  <line x1="196" y1="250" x2="196" y2="170"/>
+  <path d="M196,170 l-5,8 l10,0 z" fill="currentColor" stroke="none"/>
+
+  <!-- AGC: tapped from the detector, fed back to RF amp and IF amp gain controls -->
+  <g stroke-dasharray="4,3">
+    <line x1="388" y1="170" x2="388" y2="330"/>
+    <line x1="388" y1="330" x2="100" y2="330"/>
+    <line x1="292" y1="330" x2="292" y2="170"/>
+    <line x1="100" y1="330" x2="100" y2="170"/>
+  </g>
+  <path d="M292,170 l-5,8 l10,0 z" fill="currentColor" stroke="none"/>
+  <path d="M100,170 l-5,8 l10,0 z" fill="currentColor" stroke="none"/>
+
+  <!-- Image-frequency callout, dashed leader to the RF-amp front end -->
+  <rect x="65" y="12" width="235" height="74"/>
+  <line x1="150" y1="86" x2="100" y2="110" stroke-dasharray="4,3"/>
+
+  <!-- f_IF callout, dashed leader to the IF amp -->
+  <line x1="460" y1="40" x2="292" y2="110" stroke-dasharray="4,3"/>
+
+  <!-- junction dots -->
+  <g fill="currentColor" stroke="none">
+    <circle cx="388" cy="330" r="2.6"/>
+    <circle cx="292" cy="330" r="2.6"/>
+    <circle cx="100" cy="330" r="2.6"/>
+  </g>
+</g>
+
+<!-- Labels -->
+<g fill="currentColor" stroke="none" font-size="13" text-anchor="middle">
+  <text x="35" y="58" font-size="11">ANT</text>
+
+  <text x="100" y="144">RF AMP</text>
+  <text x="196" y="144">MIXER</text>
+  <text x="292" y="138">IF AMP</text>
+  <text x="292" y="154" font-size="10">(fixed IF)</text>
+  <text x="388" y="144" font-size="12">DETECTOR</text>
+  <text x="484" y="144">AF AMP</text>
+  <text x="557" y="190" font-size="11">SPEAKER</text>
+
+  <text x="196" y="292" font-size="11">LOCAL</text>
+  <text x="196" y="305" font-size="11">OSCILLATOR</text>
+
+  <text x="196" y="230" font-size="11">to mixer's</text>
+  <text x="196" y="243" font-size="11">2nd input</text>
+
+  <text x="240" y="345" font-size="11">AGC</text>
+  <text x="240" y="358" font-size="9.5">(reduces gain on strong signals)</text>
+
+  <!-- image-frequency callout text -->
+  <text x="183" y="30" font-weight="bold" font-size="12">IMAGE FREQUENCY</text>
+  <text x="183" y="49" font-size="12">f_image = f_LO &#177; f_IF</text>
+  <text x="183" y="64" font-size="9.5">(spurious response — rejected only</text>
+  <text x="183" y="76" font-size="9.5">by RF-stage/front-end selectivity)</text>
+
+  <!-- f_IF callout text -->
+  <text x="460" y="24" font-size="12">CONVERSION</text>
+  <text x="460" y="40" font-size="13">f_IF = |f_RF &#8722; f_LO|</text>
+</g>
+
+</svg>

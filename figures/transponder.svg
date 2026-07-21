@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="sans-serif">
+
+  <text x="300" y="24" font-size="14" fill="currentColor" text-anchor="middle" font-weight="bold">SATELLITE LINEAR TRANSPONDER</text>
+  <text x="300" y="40" font-size="10.5" fill="currentColor" text-anchor="middle">(generic Mode B: relays a whole slice of spectrum — many simultaneous SSB/CW QSOs)</text>
+
+  <!-- ================= uplink antenna ================= -->
+  <line x1="45" y1="120" x2="45" y2="165" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="30" y1="130" x2="60" y2="130" stroke="currentColor" stroke-width="2"/>
+  <line x1="30" y1="146" x2="60" y2="146" stroke="currentColor" stroke-width="2"/>
+  <text x="45" y="112" font-size="11.5" fill="currentColor" text-anchor="middle" font-weight="bold">UPLINK ANT.</text>
+  <text x="45" y="230" font-size="10" fill="currentColor" text-anchor="middle">70 cm band</text>
+  <text x="45" y="242" font-size="10" fill="currentColor" text-anchor="middle">(~432 MHz)</text>
+
+  <line x1="45" y1="165" x2="45" y2="180" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="45" y1="180" x2="100" y2="180" stroke="currentColor" stroke-width="2.5"/>
+  <polygon points="100,180 90,175 90,185" fill="currentColor"/>
+
+  <!-- ================= receiver ================= -->
+  <rect x="100" y="155" width="95" height="50" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <text x="147" y="184" font-size="13" fill="currentColor" text-anchor="middle" font-weight="bold">RECEIVER</text>
+
+  <line x1="195" y1="180" x2="230" y2="180" stroke="currentColor" stroke-width="2.5"/>
+  <polygon points="230,180 220,175 220,185" fill="currentColor"/>
+
+  <!-- ================= frequency translator (mixer) ================= -->
+  <rect x="230" y="155" width="140" height="50" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <circle cx="252" cy="180" r="11" stroke="currentColor" stroke-width="2" fill="none"/>
+  <line x1="245" y1="173" x2="259" y2="187" stroke="currentColor" stroke-width="1.8"/>
+  <line x1="245" y1="187" x2="259" y2="173" stroke="currentColor" stroke-width="1.8"/>
+  <text x="309" y="177" font-size="10.5" fill="currentColor" text-anchor="middle">FREQ.</text>
+  <text x="309" y="189" font-size="10.5" fill="currentColor" text-anchor="middle">TRANSLATION</text>
+
+  <line x1="300" y1="230" x2="300" y2="205" stroke="currentColor" stroke-width="2.5"/>
+  <polygon points="300,205 295,215 305,215" fill="currentColor"/>
+  <text x="300" y="244" font-size="10.5" fill="currentColor" text-anchor="middle">LO</text>
+  <text x="300" y="262" font-size="10" fill="currentColor" text-anchor="middle">f_down = f_LO − f_up</text>
+  <text x="300" y="274" font-size="10" fill="currentColor" text-anchor="middle">(passband inverted)</text>
+
+  <line x1="370" y1="180" x2="400" y2="180" stroke="currentColor" stroke-width="2.5"/>
+  <polygon points="400,180 390,175 390,185" fill="currentColor"/>
+
+  <!-- ================= transmitter ================= -->
+  <rect x="400" y="155" width="100" height="50" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <text x="450" y="184" font-size="12.5" fill="currentColor" text-anchor="middle" font-weight="bold">TRANSMITTER</text>
+
+  <line x1="500" y1="180" x2="540" y2="180" stroke="currentColor" stroke-width="2.5"/>
+  <polygon points="540,180 530,175 530,185" fill="currentColor"/>
+
+  <!-- ================= downlink antenna ================= -->
+  <line x1="540" y1="165" x2="540" y2="120" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="525" y1="130" x2="555" y2="130" stroke="currentColor" stroke-width="2"/>
+  <line x1="525" y1="146" x2="555" y2="146" stroke="currentColor" stroke-width="2"/>
+  <text x="540" y="112" font-size="11" fill="currentColor" text-anchor="middle" font-weight="bold">DOWNLINK ANT.</text>
+  <text x="540" y="230" font-size="10" fill="currentColor" text-anchor="middle">2 m band</text>
+  <text x="540" y="242" font-size="10" fill="currentColor" text-anchor="middle">(~146 MHz)</text>
+
+  <!-- ================= spectrum-inversion mini diagram ================= -->
+  <text x="300" y="300" font-size="11.5" fill="currentColor" text-anchor="middle">spectrum inversion: high ↔ low swap end-for-end</text>
+
+  <line x1="60" y1="345" x2="185" y2="345" stroke="currentColor" stroke-width="2"/>
+  <line x1="75" y1="338" x2="75" y2="352" stroke="currentColor" stroke-width="2"/>
+  <line x1="170" y1="338" x2="170" y2="352" stroke="currentColor" stroke-width="2"/>
+  <text x="75" y="332" font-size="11" fill="currentColor" text-anchor="middle">A</text>
+  <text x="170" y="332" font-size="11" fill="currentColor" text-anchor="middle">B</text>
+  <text x="122" y="362" font-size="9.5" fill="currentColor" text-anchor="middle">uplink slice</text>
+
+  <line x1="415" y1="345" x2="540" y2="345" stroke="currentColor" stroke-width="2"/>
+  <line x1="430" y1="338" x2="430" y2="352" stroke="currentColor" stroke-width="2"/>
+  <line x1="525" y1="338" x2="525" y2="352" stroke="currentColor" stroke-width="2"/>
+  <text x="430" y="332" font-size="11" fill="currentColor" text-anchor="middle">B</text>
+  <text x="525" y="332" font-size="11" fill="currentColor" text-anchor="middle">A</text>
+  <text x="477" y="362" font-size="9.5" fill="currentColor" text-anchor="middle">downlink slice (inverted)</text>
+
+  <!-- diagonal ties from each uplink edge to its swapped downlink position, crossing to show inversion -->
+  <line x1="75" y1="368" x2="525" y2="390" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4,4" opacity="0.55"/>
+  <line x1="170" y1="368" x2="430" y2="390" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4,4" opacity="0.55"/>
+</svg>

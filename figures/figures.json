@@ -1,0 +1,362 @@
+{
+  "p-hertz": {
+    "id": "p-hertz",
+    "chapter": 0,
+    "number": "0.1",
+    "caption": "Hertz's spark oscillator and resonant loop (1887)",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/p-hertz.svg",
+    "spoken": "Hertz's spark-gap oscillator exciting a resonant loop detector"
+  },
+  "p-emwave": {
+    "id": "p-emwave",
+    "chapter": 0,
+    "number": "0.2",
+    "caption": "A radiated electromagnetic wave: E ⊥ H ⊥ direction of travel",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/p-emwave.svg",
+    "spoken": "an electromagnetic wave showing the electric and magnetic fields at right angles to each other and to the direction of propagation"
+  },
+  "p-flambda": {
+    "id": "p-flambda",
+    "chapter": 0,
+    "number": "0.3",
+    "caption": "Wavelength vs frequency across the amateur bands (λ = 300 / f_MHz)",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/p-flambda.svg",
+    "spoken": "a curve of wavelength against frequency, with the amateur bands marked"
+  },
+  "spark-tx": {
+    "id": "spark-tx",
+    "chapter": 1,
+    "number": "1.1",
+    "caption": "A spark-gap transmitter: the induction-coil source charges the primary tank (C1) through the telegraph key; when the spark gap fires, C1 rings down through the primary (L1) of the oscillation transformer, inducing a damped oscillation in the tuned secondary (L2 and variable C2) that feeds the antenna and ground.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/spark-tx.svg",
+    "spoken": "a spark-gap transmitter with the induction coil, key, spark gap, tuned tank, and antenna"
+  },
+  "damped-vs-cw": {
+    "id": "damped-vs-cw",
+    "chapter": 1,
+    "number": "1.2",
+    "caption": "A damped spark wave-train versus a pure continuous wave: the spark transmitter (top) produces repeated bursts of exponentially decaying oscillation, each burst's energy dumped and gone before the next spark fires; a continuous-wave (CW) transmitter (bottom) sustains a constant-amplitude sine carrier for as long as it is keyed.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/damped-vs-cw.svg",
+    "spoken": "two waveforms: an exponentially decaying spark train above, a steady continuous wave below"
+  },
+  "crystal-det": {
+    "id": "crystal-det",
+    "chapter": 1,
+    "number": "1.3",
+    "caption": "A crystal (cat's-whisker) detector receiver: antenna and ground drive a parallel LC tuned circuit; a point-contact crystal detector (a fine cat's-whisker wire touching a galena crystal, drawn here as a diode) rectifies the tuned RF, and the resulting audio is heard in headphones, with a bypass condenser (Cb) shunting residual RF around them.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/crystal-det.svg",
+    "spoken": "a crystal set: antenna, tuned circuit, galena cat's-whisker detector, and headphones"
+  },
+  "inverted-l": {
+    "id": "inverted-l",
+    "chapter": 1,
+    "number": "1.4",
+    "caption": "An inverted-L antenna worked against ground: a vertical wire rises from the station's feed point to a long horizontal top wire, insulated from its two support masts, with a separate earth-ground rod completing the return path -- the ancestor of the ground-plane monopole.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/inverted-l.svg",
+    "spoken": "an inverted-L antenna: a vertical rise, a long horizontal top wire, and an earth ground"
+  },
+  "regen-rx": {
+    "id": "regen-rx",
+    "chapter": 2,
+    "number": "2.1",
+    "caption": "A regenerative detector with tickler feedback: amplified plate current from the tickler coil (L2) couples back into the grid tank coil (L1), boosting gain and selectivity.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/regen-rx.svg",
+    "spoken": "Figure 2.1 shows a regenerative receiver where a tickler coil feeds amplified signal back to raise gain and selectivity."
+  },
+  "hartley": {
+    "id": "hartley",
+    "chapter": 2,
+    "number": "2.2",
+    "caption": "A Hartley oscillator: a single tapped inductor and its tuning capacitor form the tank, with the centre tap grounded to the cathode so the plate-side and grid-side turns feed energy back into oscillation.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/hartley.svg",
+    "spoken": "Figure 2.2 shows a Hartley oscillator with its tapped tank inductor setting the frequency."
+  },
+  "skip-zone": {
+    "id": "skip-zone",
+    "chapter": 2,
+    "number": "2.3",
+    "caption": "Ionospheric skip and the skip zone: a sky wave refracts off the ionosphere to land far beyond the transmitter's short-range ground wave, leaving a dead zone of no reception in between.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/skip-zone.svg",
+    "spoken": "Figure 2.3 shows a short-wave signal refracting off the ionosphere to a distant landing point, leaving a skip zone of no reception."
+  },
+  "mopa": {
+    "id": "mopa",
+    "chapter": 2,
+    "number": "2.4",
+    "caption": "A master-oscillator power-amplifier (MOPA) transmitter: a stable low-power oscillator drives a buffer and then a power amplifier into the antenna, so the antenna's shifting load never pulls the oscillator off frequency.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/mopa.svg",
+    "spoken": "Figure 2.4 shows a MOPA chain: a stable low-power oscillator driving a power amplifier into the antenna."
+  },
+  "superhet-block": {
+    "id": "superhet-block",
+    "chapter": 3,
+    "number": "3.1",
+    "caption": "The superheterodyne receiver: f_IF = |f_RF − f_LO|",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/superhet-block.svg",
+    "spoken": "a superheterodyne block diagram: RF amp, mixer with local oscillator, IF amplifier, detector, and audio"
+  },
+  "pierce-osc": {
+    "id": "pierce-osc",
+    "chapter": 3,
+    "number": "3.2",
+    "caption": "A Pierce crystal oscillator",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/pierce-osc.svg",
+    "spoken": "a Pierce oscillator using a quartz crystal as the frequency-controlling element"
+  },
+  "am-spectrum": {
+    "id": "am-spectrum",
+    "chapter": 3,
+    "number": "3.3",
+    "caption": "The spectrum of a plate-modulated AM signal",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/am-spectrum.svg",
+    "spoken": "an AM spectrum: a carrier line flanked by upper and lower sidebands"
+  },
+  "pentode": {
+    "id": "pentode",
+    "chapter": 3,
+    "number": "3.4",
+    "caption": "The elements of a pentode vacuum tube",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/pentode.svg",
+    "spoken": "a pentode tube cross-section: cathode, control grid, screen grid, suppressor grid, and plate"
+  },
+  "pi-network": {
+    "id": "pi-network",
+    "chapter": 4,
+    "number": "4.1",
+    "caption": "A pi-network output tank matches the PA plate to the antenna: a shunt tune capacitor, series inductor, and shunt load capacitor transform impedance while filtering harmonics.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/pi-network.svg",
+    "spoken": "a pi-network output tank: shunt input capacitor, series inductor, shunt output capacitor"
+  },
+  "yagi": {
+    "id": "yagi",
+    "chapter": 4,
+    "number": "4.2",
+    "caption": "A three-element Yagi–Uda beam: reflector, driven element, and director mounted on a boom, with the main lobe directed toward the director.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/yagi.svg",
+    "spoken": "a Yagi beam: reflector, driven element, and director on a boom, with the main lobe toward the director"
+  },
+  "yagi-pattern": {
+    "id": "yagi-pattern",
+    "chapter": 4,
+    "number": "4.3",
+    "caption": "The azimuth radiation pattern of a Yagi beam, showing a strong forward lobe and much smaller side and back lobes.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/yagi-pattern.svg",
+    "spoken": "a polar radiation pattern with a large forward lobe and small back lobe"
+  },
+  "classc": {
+    "id": "classc",
+    "chapter": 4,
+    "number": "4.4",
+    "caption": "Class-C amplifier operation: biased well beyond cutoff, the plate current flows only in short pulses, under 180° per cycle, at the peaks of the grid drive.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/classc.svg",
+    "spoken": "class-C operation: the plate current flows only in short pulses at the peaks of the drive"
+  },
+  "ssb-filter": {
+    "id": "ssb-filter",
+    "chapter": 5,
+    "number": "5.1",
+    "caption": "SSB by the filter method",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/ssb-filter.svg",
+    "spoken": "the filter method: a balanced modulator makes double sideband, then a sharp filter removes one sideband"
+  },
+  "ssb-phasing": {
+    "id": "ssb-phasing",
+    "chapter": 5,
+    "number": "5.2",
+    "caption": "SSB by the phasing method",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/ssb-phasing.svg",
+    "spoken": "the phasing method: two balanced modulators fed audio and carrier in 90-degree quadrature cancel one sideband"
+  },
+  "ssb-vs-am": {
+    "id": "ssb-vs-am",
+    "chapter": 5,
+    "number": "5.3",
+    "caption": "Occupied spectrum: AM versus SSB",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/ssb-vs-am.svg",
+    "spoken": "AM with carrier and two sidebands versus SSB with one sideband and no carrier, showing SSB's narrower, more efficient spectrum"
+  },
+  "ce-amp": {
+    "id": "ce-amp",
+    "chapter": 5,
+    "number": "5.4",
+    "caption": "An NPN common-emitter amplifier",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/ce-amp.svg",
+    "spoken": "a common-emitter transistor amplifier with base bias, collector load, and emitter resistor"
+  },
+  "fm-detector": {
+    "id": "fm-detector",
+    "chapter": 6,
+    "number": "6.1",
+    "caption": "An FM discriminator (frequency detector)",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/fm-detector.svg",
+    "spoken": "an FM detector that converts frequency deviation into an audio voltage"
+  },
+  "repeater-duplex": {
+    "id": "repeater-duplex",
+    "chapter": 6,
+    "number": "6.2",
+    "caption": "FM repeater duplex operation with an offset",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/repeater-duplex.svg",
+    "spoken": "a repeater receiving on one frequency and simultaneously transmitting on an offset frequency through a duplexer"
+  },
+  "doppler": {
+    "id": "doppler",
+    "chapter": 6,
+    "number": "6.3",
+    "caption": "Doppler shift across a satellite pass",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/doppler.svg",
+    "spoken": "the received frequency sweeping high-to-low through the nominal frequency as the satellite passes overhead"
+  },
+  "transponder": {
+    "id": "transponder",
+    "chapter": 6,
+    "number": "6.4",
+    "caption": "A satellite linear transponder",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/transponder.svg",
+    "spoken": "a satellite transponder receiving an uplink band and re-transmitting it, inverted, on a downlink band"
+  },
+  "pll": {
+    "id": "pll",
+    "chapter": 7,
+    "number": "7.1",
+    "caption": "A phase-locked-loop (PLL) frequency synthesizer. A crystal reference and a divided-down VCO output are compared in a phase detector; the error signal is smoothed by a loop filter and steers the VCO. The programmable ÷N divider sets the channel: f_VCO = N·f_ref.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/pll.svg",
+    "spoken": "a PLL synthesizer: reference, phase detector, loop filter, VCO, and programmable divider"
+  },
+  "ax25-frame": {
+    "id": "ax25-frame",
+    "chapter": 7,
+    "number": "7.2",
+    "caption": "The AX.25 packet frame: HDLC-style Flag, Destination and Source addresses (each with SSID), optional digipeater addresses, Control, PID, Information, and a 16-bit CRC-CCITT Frame Check Sequence, closed by a final Flag.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/ax25-frame.svg",
+    "spoken": "the fields of an AX.25 frame: flag, addresses, control, PID, information, frame check, flag"
+  },
+  "afsk": {
+    "id": "afsk",
+    "chapter": 7,
+    "number": "7.3",
+    "caption": "Bell 202 1200-baud AFSK: the audio tone shifts continuously between the 1200 Hz mark and 2200 Hz space frequencies as each data bit is sent.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/afsk.svg",
+    "spoken": "a frequency-shift-keyed audio waveform switching between the mark and space tones for ones and zeros"
+  },
+  "packet-net": {
+    "id": "packet-net",
+    "chapter": 7,
+    "number": "7.4",
+    "caption": "A packet network: two stations out of direct radio range each link to a central digipeater, which relays AX.25 frames hop-by-hop between them.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/packet-net.svg",
+    "spoken": "two stations out of direct range relaying through a digipeater node"
+  },
+  "sdr-iq": {
+    "id": "sdr-iq",
+    "chapter": 8,
+    "number": "8.1",
+    "caption": "A software-defined radio: I/Q direct-conversion front end.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/sdr-iq.svg",
+    "spoken": "a direct-conversion receiver splitting the signal into in-phase and quadrature channels sampled and processed in software"
+  },
+  "waterfall": {
+    "id": "waterfall",
+    "chapter": 8,
+    "number": "8.2",
+    "caption": "An FFT waterfall (spectrogram) of a busy band.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/waterfall.svg",
+    "spoken": "a waterfall display with frequency across and time down, signals appearing as bright vertical traces"
+  },
+  "psk31": {
+    "id": "psk31",
+    "chapter": 8,
+    "number": "8.3",
+    "caption": "PSK31: BPSK phase reversals carrying Varicode.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/psk31.svg",
+    "spoken": "a binary phase-shift-keyed carrier reversing phase to send varicode characters"
+  },
+  "ft8-seq": {
+    "id": "ft8-seq",
+    "chapter": 8,
+    "number": "8.4",
+    "caption": "An FT8 exchange in 15-second time slots.",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/ft8-seq.svg",
+    "spoken": "an FT8 QSO proceeding in alternating fifteen-second transmit and receive slots"
+  },
+  "modes-timeline": {
+    "id": "modes-timeline",
+    "chapter": 9,
+    "number": "9.1",
+    "caption": "A century of the art: key technologies by decade",
+    "kind": "original",
+    "source": "authored",
+    "file": "figures/modes-timeline.svg",
+    "spoken": "a timeline of amateur radio technologies from spark to software-defined radio across the decades"
+  }
+}

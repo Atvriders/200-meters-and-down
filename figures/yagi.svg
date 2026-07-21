@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="sans-serif">
+
+  <!-- element identity labels -->
+  <text x="140" y="28" font-size="14" fill="currentColor" text-anchor="middle">REFLECTOR</text>
+  <text x="300" y="28" font-size="14" fill="currentColor" text-anchor="middle">DRIVEN (FED)</text>
+  <text x="430" y="28" font-size="14" fill="currentColor" text-anchor="middle">DIRECTOR</text>
+
+  <!-- boom -->
+  <line x1="50" y1="190" x2="560" y2="190" stroke="currentColor" stroke-width="4" fill="none"/>
+  <text x="95" y="207" font-size="12" fill="currentColor" text-anchor="middle">BOOM</text>
+
+  <!-- reflector: longest element -->
+  <line x1="140" y1="55" x2="140" y2="325" stroke="currentColor" stroke-width="3" fill="none"/>
+
+  <!-- driven element: medium length, with feedpoint gap -->
+  <line x1="300" y1="75" x2="300" y2="185" stroke="currentColor" stroke-width="3" fill="none"/>
+  <line x1="300" y1="195" x2="300" y2="305" stroke="currentColor" stroke-width="3" fill="none"/>
+  <circle cx="300" cy="185" r="3" fill="currentColor" stroke="none"/>
+  <circle cx="300" cy="195" r="3" fill="currentColor" stroke="none"/>
+
+  <!-- director: shortest element -->
+  <line x1="430" y1="95" x2="430" y2="285" stroke="currentColor" stroke-width="3" fill="none"/>
+
+  <!-- feedline from the driven element down to the transmitter -->
+  <line x1="294" y1="305" x2="294" y2="330" stroke="currentColor" stroke-width="2" fill="none"/>
+  <line x1="306" y1="305" x2="306" y2="330" stroke="currentColor" stroke-width="2" fill="none"/>
+  <text x="315" y="322" font-size="12" fill="currentColor" text-anchor="start">FEEDLINE</text>
+  <text x="315" y="336" font-size="12" fill="currentColor" text-anchor="start">to transmitter</text>
+
+  <!-- element spacing, marked along a dimension line -->
+  <line x1="140" y1="340" x2="140" y2="350" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <line x1="300" y1="340" x2="300" y2="350" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <line x1="430" y1="340" x2="430" y2="350" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <line x1="140" y1="345" x2="430" y2="345" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <polygon points="140,345 150,340 150,350" fill="currentColor" stroke="none"/>
+  <polygon points="430,345 420,340 420,350" fill="currentColor" stroke="none"/>
+  <text x="220" y="363" font-size="12" fill="currentColor" text-anchor="middle">SPACING</text>
+  <text x="365" y="363" font-size="12" fill="currentColor" text-anchor="middle">SPACING</text>
+
+  <!-- forward main-lobe direction -->
+  <line x1="435" y1="160" x2="543" y2="160" stroke="currentColor" stroke-width="3" fill="none"/>
+  <polygon points="553,160 538,152 538,168" fill="currentColor" stroke="none"/>
+  <text x="490" y="145" font-size="13" fill="currentColor" text-anchor="middle">MAIN LOBE (FORWARD)</text>
+</svg>

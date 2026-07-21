@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="Helvetica, Arial, sans-serif">
+  <g stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- ===== Earth / ground plane ===== -->
+    <line x1="20" y1="340" x2="580" y2="340" stroke-width="2"/>
+    <path d="M30,340 L40,352 M50,340 L60,352 M70,340 L80,352 M90,340 L100,352 M110,340 L120,352 M130,340 L140,352 M150,340 L160,352 M170,340 L180,352 M190,340 L200,352 M210,340 L220,352 M230,340 L240,352 M250,340 L260,352 M270,340 L280,352 M290,340 L300,352 M310,340 L320,352 M330,340 L340,352 M350,340 L360,352 M370,340 L380,352 M390,340 L400,352 M410,340 L420,352 M430,340 L440,352 M450,340 L460,352 M470,340 L480,352 M490,340 L500,352 M510,340 L520,352 M530,340 L540,352 M550,340 L560,352 M570,340 L580,352" stroke-width="1.1"/>
+
+    <!-- ===== Station (transmitter shack) ===== -->
+    <rect x="50" y="270" width="80" height="70"/>
+
+    <!-- ===== Feed point + vertical radiator ===== -->
+    <circle cx="110" cy="270" r="3" fill="currentColor" stroke="none"/>
+    <line x1="110" y1="270" x2="110" y2="80"/>
+
+    <!-- radiation ticks off the vertical section -->
+    <path d="M128,130 L142,120 M133,155 L147,145 M128,180 L142,170" stroke-width="1.2"/>
+
+    <!-- ===== Near (station-side) support mast, roof-mounted ===== -->
+    <line x1="95" y1="270" x2="95" y2="80"/>
+    <rect x="91" y="268" width="8" height="6"/>
+    <line x1="95" y1="80" x2="110" y2="80"/>
+    <ellipse cx="101" cy="80" rx="6" ry="3"/>
+
+    <!-- ===== Top wire (horizontal section) ===== -->
+    <line x1="110" y1="80" x2="480" y2="80"/>
+
+    <!-- ===== Far support mast ===== -->
+    <line x1="480" y1="80" x2="500" y2="80"/>
+    <ellipse cx="489" cy="80" rx="6" ry="3"/>
+    <line x1="500" y1="340" x2="500" y2="80"/>
+    <line x1="500" y1="150" x2="465" y2="340" stroke-width="1.2"/>
+    <line x1="500" y1="150" x2="535" y2="340" stroke-width="1.2"/>
+
+    <!-- ===== Earth / ground connection from station ===== -->
+    <line x1="130" y1="300" x2="170" y2="300"/>
+    <line x1="170" y1="300" x2="170" y2="380"/>
+    <line x1="163" y1="350" x2="177" y2="350" stroke-width="1.4"/>
+    <line x1="163" y1="362" x2="177" y2="362" stroke-width="1.4"/>
+    <line x1="163" y1="374" x2="177" y2="374" stroke-width="1.4"/>
+
+  </g>
+
+  <!-- ===== Labels ===== -->
+  <g fill="currentColor" stroke="none" font-size="11">
+    <text x="300" y="22" text-anchor="middle" font-size="13" font-weight="bold">INVERTED-L ANTENNA</text>
+
+    <text x="90" y="309" text-anchor="middle" font-size="10.5">STATION</text>
+
+    <text x="150" y="260" text-anchor="start" font-size="10.5">FEED POINT</text>
+    <line x1="148" y1="255" x2="116" y2="270" stroke="currentColor" stroke-width="1"/>
+
+    <text x="128" y="195" text-anchor="start" font-size="10">VERTICAL RADIATOR</text>
+    <text x="128" y="209" text-anchor="start" font-size="9">(worked against ground)</text>
+
+    <text x="290" y="65" text-anchor="middle" font-size="10.5">TOP WIRE (HORIZONTAL SECTION)</text>
+
+    <text x="470" y="68" text-anchor="end" font-size="9">INSULATOR</text>
+
+    <text x="200" y="372" text-anchor="start" font-size="10.5">EARTH GROUND</text>
+    <text x="200" y="385" text-anchor="start" font-size="9">(ground rod)</text>
+
+    <text x="30" y="393" text-anchor="start" font-size="9" font-style="italic">earth</text>
+  </g>
+</svg>

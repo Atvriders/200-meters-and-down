@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="Helvetica, Arial, sans-serif">
+  <!-- ============ Antenna ============ -->
+  <g stroke="currentColor" stroke-width="2" fill="none">
+    <line x1="55" y1="200" x2="55" y2="95"/>
+    <line x1="55" y1="95" x2="38" y2="65"/>
+    <line x1="55" y1="95" x2="55" y2="60"/>
+    <line x1="55" y1="95" x2="72" y2="65"/>
+  </g>
+  <text x="55" y="222" text-anchor="middle" font-size="12" fill="currentColor">Antenna</text>
+
+  <!-- feed to splitter -->
+  <line x1="55" y1="200" x2="112" y2="200" stroke="currentColor" stroke-width="2"/>
+  <circle cx="112" cy="200" r="4" fill="currentColor"/>
+
+  <!-- splitter branches -->
+  <path d="M112,200 L112,100 L152,100" stroke="currentColor" stroke-width="2" fill="none"/>
+  <path d="M112,200 L112,300 L152,300" stroke="currentColor" stroke-width="2" fill="none"/>
+  <text x="118" y="150" font-size="11" fill="currentColor">splitter</text>
+
+  <!-- Path labels -->
+  <text x="130" y="90" font-size="16" font-weight="bold" fill="currentColor">I</text>
+  <text x="128" y="290" font-size="16" font-weight="bold" fill="currentColor">Q</text>
+
+  <!-- ============ Mixer I (top) ============ -->
+  <circle cx="170" cy="100" r="18" stroke="currentColor" stroke-width="2" fill="none"/>
+  <line x1="159" y1="89" x2="181" y2="111" stroke="currentColor" stroke-width="2"/>
+  <line x1="159" y1="111" x2="181" y2="89" stroke="currentColor" stroke-width="2"/>
+  <text x="170" y="70" text-anchor="middle" font-size="12" fill="currentColor">Mixer (I)</text>
+
+  <!-- ============ Mixer Q (bottom) ============ -->
+  <circle cx="170" cy="300" r="18" stroke="currentColor" stroke-width="2" fill="none"/>
+  <line x1="159" y1="289" x2="181" y2="311" stroke="currentColor" stroke-width="2"/>
+  <line x1="159" y1="311" x2="181" y2="289" stroke="currentColor" stroke-width="2"/>
+  <text x="170" y="335" text-anchor="middle" font-size="12" fill="currentColor">Mixer (Q)</text>
+
+  <!-- ============ Local oscillator ============ -->
+  <rect x="135" y="185" width="70" height="30" stroke="currentColor" stroke-width="2" fill="none"/>
+  <text x="170" y="204" text-anchor="middle" font-size="12" fill="currentColor">LO</text>
+
+  <line x1="170" y1="185" x2="170" y2="118" stroke="currentColor" stroke-width="2"/>
+  <text x="182" y="155" font-size="11" fill="currentColor">0&#176;</text>
+
+  <line x1="170" y1="215" x2="170" y2="234" stroke="currentColor" stroke-width="2"/>
+  <rect x="150" y="234" width="40" height="24" stroke="currentColor" stroke-width="2" fill="none"/>
+  <text x="170" y="250" text-anchor="middle" font-size="11" fill="currentColor">90&#176;</text>
+  <line x1="170" y1="258" x2="170" y2="282" stroke="currentColor" stroke-width="2"/>
+
+  <!-- ============ Low-pass filters ============ -->
+  <line x1="188" y1="100" x2="220" y2="100" stroke="currentColor" stroke-width="2"/>
+  <rect x="220" y="85" width="60" height="30" stroke="currentColor" stroke-width="2" fill="none"/>
+  <text x="250" y="104" text-anchor="middle" font-size="12" fill="currentColor">LPF</text>
+
+  <line x1="188" y1="300" x2="220" y2="300" stroke="currentColor" stroke-width="2"/>
+  <rect x="220" y="285" width="60" height="30" stroke="currentColor" stroke-width="2" fill="none"/>
+  <text x="250" y="304" text-anchor="middle" font-size="12" fill="currentColor">LPF</text>
+
+  <!-- ============ ADCs ============ -->
+  <line x1="280" y1="100" x2="320" y2="100" stroke="currentColor" stroke-width="2"/>
+  <rect x="320" y="85" width="60" height="30" stroke="currentColor" stroke-width="2" fill="none"/>
+  <text x="350" y="104" text-anchor="middle" font-size="12" fill="currentColor">ADC</text>
+
+  <line x1="280" y1="300" x2="320" y2="300" stroke="currentColor" stroke-width="2"/>
+  <rect x="320" y="285" width="60" height="30" stroke="currentColor" stroke-width="2" fill="none"/>
+  <text x="350" y="304" text-anchor="middle" font-size="12" fill="currentColor">ADC</text>
+
+  <!-- ============ Routing into DSP block ============ -->
+  <path d="M380,100 L405,100 L405,175 L422,175" stroke="currentColor" stroke-width="2" fill="none"/>
+  <path d="M380,300 L405,300 L405,225 L422,225" stroke="currentColor" stroke-width="2" fill="none"/>
+  <text x="392" y="145" font-size="11" fill="currentColor">I samples</text>
+  <text x="392" y="270" font-size="11" fill="currentColor">Q samples</text>
+
+  <!-- ============ DSP / computer block ============ -->
+  <rect x="422" y="150" width="140" height="100" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <text x="492" y="192" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">DSP / Computer</text>
+  <text x="492" y="210" text-anchor="middle" font-size="11" fill="currentColor">software</text>
+  <text x="492" y="225" text-anchor="middle" font-size="11" fill="currentColor">demodulation</text>
+
+  <!-- output arrow -->
+  <line x1="562" y1="200" x2="592" y2="200" stroke="currentColor" stroke-width="2"/>
+  <path d="M592,200 L582,194 L582,206 Z" fill="currentColor"/>
+  <text x="577" y="270" text-anchor="end" font-size="11" fill="currentColor">audio / data out</text>
+
+  <!-- ============ Caption strap ============ -->
+  <text x="10" y="20" font-size="13" fill="currentColor">I/Q direct-conversion receiver front end</text>
+</svg>

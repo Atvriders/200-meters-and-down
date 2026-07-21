@@ -1,0 +1,7 @@
+services:
+  two-hundred-meters-and-down:
+    image: ghcr.io/atvriders/200-meters-and-down:latest
+    container_name: 200-meters-and-down
+    ports:
+      - "8080:80"
+    restart: unless-stopped

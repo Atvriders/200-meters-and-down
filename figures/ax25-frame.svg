@@ -1,0 +1,78 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <title>Figure 7.2 — AX.25 packet frame</title>
+
+  <g fill="currentColor" stroke="none" font-size="14" text-anchor="middle" font-style="italic">
+    <text x="300" y="30">AX.25 packet frame</text>
+  </g>
+
+  <!-- Field boxes: x, width pairs sum to 560, starting at x=20, y=150, height=70 -->
+  <g stroke="currentColor" fill="none" stroke-width="2" stroke-linejoin="round">
+    <rect x="20"  y="150" width="40"  height="70"/>  <!-- Flag -->
+    <rect x="60"  y="150" width="70"  height="70"/>  <!-- Dest -->
+    <rect x="130" y="150" width="70"  height="70"/>  <!-- Source -->
+    <rect x="200" y="150" width="90"  height="70"/>  <!-- Digipeaters -->
+    <rect x="290" y="150" width="50"  height="70"/>  <!-- Control -->
+    <rect x="340" y="150" width="40"  height="70"/>  <!-- PID -->
+    <rect x="380" y="150" width="110" height="70"/>  <!-- Info -->
+    <rect x="490" y="150" width="50"  height="70"/>  <!-- FCS -->
+    <rect x="540" y="150" width="40"  height="70"/>  <!-- Flag -->
+  </g>
+
+  <!-- field labels (inside box) -->
+  <g fill="currentColor" stroke="none" font-size="12" text-anchor="middle">
+    <text x="40"  y="180">Flag</text>
+    <text x="40"  y="196" font-size="10">0x7E</text>
+
+    <text x="95"  y="180">Dest.</text>
+    <text x="95"  y="196">+SSID</text>
+
+    <text x="165" y="180">Source</text>
+    <text x="165" y="196">+SSID</text>
+
+    <text x="245" y="174">Digi-</text>
+    <text x="245" y="190">peaters</text>
+    <text x="245" y="206" font-size="10">(0&#8211;8 addr.)</text>
+
+    <text x="315" y="180">Ctrl</text>
+
+    <text x="360" y="180">PID</text>
+
+    <text x="435" y="180">Info</text>
+    <text x="435" y="196" font-size="10">(payload)</text>
+
+    <text x="515" y="180">FCS</text>
+    <text x="515" y="196" font-size="10">CRC</text>
+
+    <text x="560" y="180">Flag</text>
+    <text x="560" y="196" font-size="10">0x7E</text>
+  </g>
+
+  <!-- byte-length labels below each box -->
+  <g fill="currentColor" stroke="none" font-size="11" text-anchor="middle">
+    <text x="40"  y="238">1 byte</text>
+    <text x="95"  y="238">7 bytes</text>
+    <text x="165" y="238">7 bytes</text>
+    <text x="245" y="238">0&#8211;56 bytes</text>
+    <text x="315" y="238">1&#8211;2 bytes</text>
+    <text x="360" y="238">1 byte</text>
+    <text x="435" y="238">variable</text>
+    <text x="515" y="238">2 bytes</text>
+    <text x="560" y="238">1 byte</text>
+  </g>
+
+  <!-- Address-field brace grouping Dest+Source+Digipeaters -->
+  <g stroke="currentColor" fill="none" stroke-width="1.4">
+    <path d="M60,140 L60,130 L290,130 L290,140" />
+    <line x1="175" y1="130" x2="175" y2="118"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="12" text-anchor="middle">
+    <text x="175" y="112">Address field</text>
+  </g>
+
+  <!-- HDLC framing note under the flags -->
+  <g fill="currentColor" stroke="none" font-size="11" text-anchor="middle" font-style="italic">
+    <text x="300" y="270">Frame Check Sequence (FCS) = 16-bit CRC-CCITT over Address&#8211;Control&#8211;PID&#8211;Info</text>
+    <text x="300" y="290">HDLC-style framing: Flag &#8226; Address (Dest, Source, Digipeaters) &#8226; Control &#8226; PID &#8226; Info &#8226; FCS &#8226; Flag</text>
+  </g>
+
+</svg>

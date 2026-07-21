@@ -1,0 +1,98 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+<title>Figure 3.2 — Pierce crystal oscillator</title>
+
+<g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- Triode envelope -->
+  <circle cx="330" cy="200" r="45"/>
+  <!-- plate, top -->
+  <line x1="300" y1="178" x2="360" y2="178"/>
+  <line x1="330" y1="178" x2="330" y2="155"/>
+  <line x1="330" y1="155" x2="330" y2="105"/>
+  <!-- grid (dashed mesh), left side -->
+  <line x1="295" y1="200" x2="365" y2="200" stroke-dasharray="6,4"/>
+  <line x1="285" y1="200" x2="295" y2="200"/>
+  <!-- cathode, bottom (hairpin) -->
+  <path d="M 308,228 L 308,238 L 352,238 L 352,228"/>
+  <line x1="330" y1="238" x2="330" y2="245"/>
+
+  <!-- Plate node P1: branch left to crystal/grid, branch right to RFC/B+ -->
+  <line x1="330" y1="105" x2="292" y2="105"/>
+  <!-- crystal: tick / box / tick (standard quartz-crystal symbol) -->
+  <line x1="292" y1="90" x2="292" y2="120" stroke-width="2.2"/>
+  <rect x="267" y="95" width="25" height="20"/>
+  <line x1="267" y1="90" x2="267" y2="120" stroke-width="2.2"/>
+  <line x1="267" y1="105" x2="200" y2="105"/>
+
+  <!-- Grid node G -->
+  <line x1="200" y1="105" x2="200" y2="200"/>
+  <line x1="200" y1="200" x2="285" y2="200"/>
+  <!-- C1: grid-to-ground capacitor -->
+  <line x1="200" y1="200" x2="200" y2="255"/>
+  <line x1="185" y1="255" x2="215" y2="255"/>
+  <line x1="185" y1="270" x2="215" y2="270"/>
+  <line x1="200" y1="270" x2="200" y2="310"/>
+  <!-- ground symbol, C1 -->
+  <line x1="200" y1="310" x2="200" y2="318"/>
+  <line x1="188" y1="318" x2="212" y2="318"/>
+  <line x1="192" y1="324" x2="208" y2="324"/>
+  <line x1="196" y1="330" x2="204" y2="330"/>
+
+  <!-- Plate node P2 -->
+  <line x1="330" y1="105" x2="390" y2="105"/>
+  <!-- C2: plate-to-ground capacitor -->
+  <line x1="390" y1="105" x2="390" y2="255"/>
+  <line x1="375" y1="255" x2="405" y2="255"/>
+  <line x1="375" y1="270" x2="405" y2="270"/>
+  <line x1="390" y1="270" x2="390" y2="310"/>
+  <!-- ground symbol, C2 -->
+  <line x1="390" y1="310" x2="390" y2="318"/>
+  <line x1="378" y1="318" x2="402" y2="318"/>
+  <line x1="382" y1="324" x2="398" y2="324"/>
+  <line x1="386" y1="330" x2="394" y2="330"/>
+
+  <!-- cathode lead to ground -->
+  <line x1="330" y1="245" x2="330" y2="300"/>
+  <line x1="330" y1="300" x2="330" y2="308"/>
+  <line x1="318" y1="308" x2="342" y2="308"/>
+  <line x1="322" y1="314" x2="338" y2="314"/>
+  <line x1="326" y1="320" x2="334" y2="320"/>
+
+  <!-- RF choke, plate node P2 out to B+ -->
+  <line x1="390" y1="105" x2="430" y2="105"/>
+  <path d="M 430,105 C 430,92 440,92 440,105 C 440,118 450,118 450,105 C 450,92 460,92 460,105 C 460,118 470,118 470,105 C 470,92 480,92 480,105"/>
+  <line x1="480" y1="105" x2="500" y2="105"/>
+
+  <!-- B+ battery symbol -->
+  <line x1="500" y1="90" x2="500" y2="120" stroke-width="2.2"/>
+  <line x1="512" y1="95" x2="512" y2="115" stroke-width="5.5"/>
+  <line x1="512" y1="105" x2="535" y2="105"/>
+
+  <!-- junction dots -->
+  <g fill="currentColor" stroke="none">
+    <circle cx="330" cy="105" r="2.6"/>
+    <circle cx="390" cy="105" r="2.6"/>
+    <circle cx="200" cy="200" r="2.6"/>
+    <circle cx="535" cy="105" r="2.6"/>
+  </g>
+</g>
+
+<!-- Labels -->
+<g fill="currentColor" stroke="none" font-size="13">
+  <text x="279" y="78" text-anchor="middle">Y1</text>
+  <text x="279" y="137" text-anchor="middle" font-size="11">quartz&#160;crystal</text>
+  <text x="240" y="190" text-anchor="middle" font-size="10">grid</text>
+  <text x="380" y="172" font-size="10">plate</text>
+  <text x="345" y="272" font-size="10">cathode</text>
+  <text x="395" y="195">V1</text>
+  <text x="395" y="210" font-size="11">triode&#160;(or&#160;pentode)</text>
+  <text x="178" y="265" text-anchor="end">C1</text>
+  <text x="412" y="265">C2</text>
+  <text x="455" y="82" text-anchor="middle" font-size="11">RFC</text>
+  <text x="542" y="109" font-size="13">B+</text>
+
+  <text x="30" y="358" font-size="12">The crystal's mechanical resonance sets the feedback phase far more stably than an LC tank;</text>
+  <text x="30" y="374" font-size="12">C1 and C2 form the capacitive divider &#8212; the crystal simply replaces the divider's usual inductor.</text>
+</g>
+
+</svg>

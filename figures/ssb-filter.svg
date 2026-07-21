@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrowF" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <g fill="none" stroke="currentColor" stroke-width="2">
+    <text x="300" y="22" font-size="16" text-anchor="middle" fill="currentColor" stroke="none">SSB by the Filter Method</text>
+
+    <!-- Audio source -->
+    <rect x="10" y="170" width="75" height="55" rx="5"/>
+    <!-- Balanced modulator -->
+    <rect x="120" y="160" width="115" height="75" rx="5"/>
+    <!-- Crystal filter -->
+    <rect x="270" y="160" width="115" height="75" rx="5"/>
+    <!-- Mixer -->
+    <circle cx="440" cy="197" r="27"/>
+    <line x1="422" y1="179" x2="458" y2="215"/>
+    <line x1="458" y1="179" x2="422" y2="215"/>
+    <!-- PA -->
+    <rect x="498" y="170" width="60" height="55" rx="5"/>
+
+    <!-- Carrier oscillator -->
+    <rect x="120" y="300" width="115" height="55" rx="5"/>
+    <!-- VFO -->
+    <rect x="383" y="300" width="115" height="55" rx="5"/>
+
+    <!-- Antenna -->
+    <line x1="575" y1="197" x2="575" y2="150"/>
+    <line x1="575" y1="150" x2="558" y2="130"/>
+    <line x1="575" y1="150" x2="592" y2="130"/>
+
+    <!-- signal path arrows -->
+    <line x1="85" y1="197" x2="116" y2="197" marker-end="url(#arrowF)"/>
+    <line x1="235" y1="197" x2="266" y2="197" marker-end="url(#arrowF)"/>
+    <line x1="385" y1="197" x2="410" y2="197" marker-end="url(#arrowF)"/>
+    <line x1="467" y1="197" x2="494" y2="197" marker-end="url(#arrowF)"/>
+    <line x1="558" y1="197" x2="573" y2="197" marker-end="url(#arrowF)"/>
+
+    <!-- oscillator feeds, vertical -->
+    <line x1="177.5" y1="300" x2="177.5" y2="238" marker-end="url(#arrowF)"/>
+    <line x1="440" y1="300" x2="440" y2="227" marker-end="url(#arrowF)"/>
+  </g>
+
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="47.5" y="192">AUDIO</text>
+    <text x="47.5" y="207">IN</text>
+
+    <text x="177.5" y="190" font-size="13">BALANCED</text>
+    <text x="177.5" y="206" font-size="13">MODULATOR</text>
+
+    <text x="327.5" y="190" font-size="13">CRYSTAL</text>
+    <text x="327.5" y="206" font-size="13">FILTER</text>
+    <text x="327.5" y="221" font-size="10">(passes one sideband)</text>
+
+    <text x="440" y="203" font-size="22" stroke="none">&#215;</text>
+    <text x="440" y="245" font-size="12">MIXER</text>
+
+    <text x="528" y="202" font-size="14">PA</text>
+
+    <text x="177.5" y="322" font-size="13">CARRIER</text>
+    <text x="177.5" y="338" font-size="13">OSCILLATOR</text>
+    <text x="177.5" y="352" font-size="10">(e.g. 455 kHz)</text>
+
+    <text x="440" y="325" font-size="13">VFO</text>
+    <text x="440" y="341" font-size="10">(sets operating</text>
+    <text x="440" y="353" font-size="10">frequency)</text>
+
+    <text x="575" y="216" font-size="11" text-anchor="middle">ANT</text>
+
+    <!-- signal-stage annotations -->
+    <text x="250" y="148" font-size="10">DSB, carrier</text>
+    <text x="250" y="160" font-size="10">suppressed</text>
+
+    <text x="397" y="148" font-size="10">SSB, one</text>
+    <text x="397" y="160" font-size="10">sideband</text>
+
+    <text x="480" y="148" font-size="10">SSB at operating</text>
+    <text x="480" y="160" font-size="10">frequency</text>
+  </g>
+</svg>

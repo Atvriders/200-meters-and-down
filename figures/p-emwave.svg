@@ -1,0 +1,58 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" color="currentColor">
+  <g transform="translate(0,45)">
+
+    <!-- legend -->
+    <line x1="15" y1="21" x2="33" y2="21" stroke="currentColor" stroke-width="2.5"/>
+    <text x="38" y="25" font-size="11" fill="currentColor">E — electric field (x-plane)</text>
+    <line x1="15" y1="36" x2="33" y2="36" stroke="currentColor" stroke-width="2.2" stroke-dasharray="5,3"/>
+    <text x="38" y="40" font-size="11" fill="currentColor">H — magnetic field (y-plane)</text>
+
+    <!-- 3D axis triad at origin -->
+    <line x1="25" y1="200" x2="560" y2="200" stroke="currentColor" stroke-width="2"/>
+    <path d="M560,200 L550,195 L550,205 Z" fill="currentColor"/>
+    <text x="574" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="currentColor">z</text>
+    <text x="560" y="253" text-anchor="end" font-size="10" font-style="italic" fill="currentColor">direction of propagation</text>
+
+    <line x1="40" y1="200" x2="40" y2="146" stroke="currentColor" stroke-width="2"/>
+    <path d="M40,140 L35,150 L45,150 Z" fill="currentColor"/>
+    <text x="40" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="currentColor">x</text>
+
+    <line x1="40" y1="200" x2="83.8" y2="171.3" stroke="currentColor" stroke-width="2"/>
+    <path d="M89.1,165.6 L83.8,175.4 L78.0,167.2 Z" fill="currentColor"/>
+    <text x="99" y="160" text-anchor="middle" font-size="14" font-weight="bold" fill="currentColor">y</text>
+
+    <circle cx="40" cy="200" r="3" fill="currentColor"/>
+
+    <!-- H field: transverse oscillation in the y-plane (dashed) -->
+    <polyline points="40.0,200.0 58.9,193.8 77.2,188.0 94.3,183.0 109.8,179.1 123.2,176.7 134.4,175.9 143.2,176.7 149.8,179.1 154.3,183.0 157.2,188.0 158.9,193.8 160.0,200.0 161.1,206.2 162.8,212.0 165.7,217.0 170.2,220.9 176.8,223.3 185.6,224.1 196.8,223.3 210.2,220.9 225.7,217.0 242.8,212.0 261.1,206.2 280.0,200.0 298.9,193.8 317.2,188.0 334.3,183.0 349.8,179.1 363.2,176.7 374.4,175.9 383.2,176.7 389.8,179.1 394.3,183.0 397.2,188.0 398.9,193.8 400.0,200.0 401.1,206.2 402.8,212.0 405.7,217.0 410.2,220.9 416.8,223.3 425.6,224.1 436.8,223.3 450.2,220.9 465.7,217.0 482.8,212.0 501.1,206.2 520.0,200.0"
+              fill="none" stroke="currentColor" stroke-width="2.2" stroke-dasharray="5,3"/>
+    <text x="115" y="163" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">H</text>
+
+    <!-- E field: transverse oscillation in the x-plane (solid) -->
+    <polyline points="40,200.0 50,183.2 60,167.5 70,154.0 80,143.7 90,137.2 100,135.0 110,137.2 120,143.7 130,154.0 140,167.5 150,183.2 160,200.0 170,216.8 180,232.5 190,246.0 200,256.3 210,262.8 220,265.0 230,262.8 240,256.3 250,246.0 260,232.5 270,216.8 280,200.0 290,183.2 300,167.5 310,154.0 320,143.7 330,137.2 340,135.0 350,137.2 360,143.7 370,154.0 380,167.5 390,183.2 400,200.0 410,216.8 420,232.5 430,246.0 440,256.3 450,262.8 460,265.0 470,262.8 480,256.3 490,246.0 500,232.5 510,216.8 520,200.0"
+              fill="none" stroke="currentColor" stroke-width="2.5"/>
+    <text x="70" y="127" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">E</text>
+
+    <!-- wavelength bracket between two adjacent E crests -->
+    <line x1="100" y1="108" x2="100" y2="122" stroke="currentColor" stroke-width="1"/>
+    <line x1="340" y1="108" x2="340" y2="122" stroke="currentColor" stroke-width="1"/>
+    <line x1="100" y1="112" x2="340" y2="112" stroke="currentColor" stroke-width="1.2"/>
+    <path d="M100,112 L108,108 L108,116 Z" fill="currentColor"/>
+    <path d="M340,112 L332,108 L332,116 Z" fill="currentColor"/>
+    <text x="220" y="100" text-anchor="middle" font-size="15" font-weight="bold" font-style="italic" fill="currentColor">λ</text>
+    <line x1="100" y1="122" x2="100" y2="133" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="340" y1="122" x2="340" y2="133" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+
+    <!-- quarter-wavelength tick marks along the propagation axis -->
+    <line x1="100" y1="196" x2="100" y2="204" stroke="currentColor" stroke-width="1.2"/>
+    <line x1="160" y1="196" x2="160" y2="204" stroke="currentColor" stroke-width="1.2"/>
+    <line x1="220" y1="196" x2="220" y2="204" stroke="currentColor" stroke-width="1.2"/>
+    <line x1="280" y1="196" x2="280" y2="204" stroke="currentColor" stroke-width="1.2"/>
+    <text x="40" y="222" text-anchor="middle" font-size="10" fill="currentColor">0</text>
+    <text x="100" y="222" text-anchor="middle" font-size="10" fill="currentColor">λ/4</text>
+    <text x="160" y="222" text-anchor="middle" font-size="10" fill="currentColor">λ/2</text>
+    <text x="220" y="222" text-anchor="middle" font-size="10" fill="currentColor">3λ/4</text>
+    <text x="280" y="222" text-anchor="middle" font-size="10" fill="currentColor">λ</text>
+
+  </g>
+</svg>

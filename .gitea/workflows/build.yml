@@ -1,0 +1,58 @@
+name: build-docker-image
+
+on:
+  push:
+    branches: [master, main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch audiobook from release v1.0
+        env:
+          REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
+        run: |
+          mkdir -p audiobook
+          # Credentials go in a 0600 ~/.netrc (printf is a shell builtin, so the
+          # token never lands in argv); URLs stay credential-free.
+          umask 077
+          printf 'machine git.waterburp.com login atvriders password %s\n' "$REGISTRY_TOKEN" > "$HOME/.netrc"
+          base="https://git.waterburp.com/Atvriders/200-meters-and-down/releases/download/v1.0"
+          curl -sSfL --netrc -o audiobook/intro.mp3 "$base/intro.mp3"
+          # 8 voices: ryan -> chNN.mp3, the rest -> <voice>-chNN.mp3
+          : > urls.txt
+          for i in $(seq -w 0 9); do
+            echo "$base/ch${i}.mp3 audiobook/ch${i}.mp3" >> urls.txt
+            for v in andrew ava sonia william natasha connor emily; do
+              echo "$base/${v}-ch${i}.mp3 audiobook/${v}-ch${i}.mp3" >> urls.txt
+            done
+          done
+          xargs -P 8 -n 2 sh -c 'curl -sSfL --netrc -o "$2" "$1"' _ < urls.txt
+          rm -f urls.txt "$HOME/.netrc"
+          echo "audiobook files: $(ls audiobook | wc -l)"
+
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+
+      - name: Build the book (HTML/TXT/PDF)
+        run: |
+          pip install -r requirements.txt
+          python3 -m playwright install --with-deps chromium || true   # optional; PDF is best-effort
+          python3 tools/build_book.py --html --txt --pdf --out build/
+
+      - name: Log in to Gitea container registry
+        uses: docker/login-action@v3
+        with:
+          registry: git.waterburp.com
+          username: atvriders
+          password: ${{ secrets.REGISTRY_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: git.waterburp.com/atvriders/200-meters-and-down:latest

@@ -1,0 +1,90 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+<g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- Stage 1: Master Oscillator -->
+  <rect x="30" y="130" width="130" height="90"/>
+  <!-- crystal symbol inside -->
+  <rect x="65" y="155" width="18" height="40"/>
+  <line x1="60" y1="155" x2="60" y2="195"/>
+  <line x1="88" y1="155" x2="88" y2="195"/>
+
+  <!-- arrow: oscillator -> buffer -->
+  <line x1="160" y1="175" x2="205" y2="175"/>
+  <path d="M 205,175 L 194,169 L 194,181 Z" fill="currentColor" stroke="none"/>
+
+  <!-- Stage 2: Buffer amplifier -->
+  <rect x="210" y="140" width="110" height="70"/>
+
+  <!-- arrow: buffer -> PA -->
+  <line x1="320" y1="175" x2="365" y2="175"/>
+  <path d="M 365,175 L 354,169 L 354,181 Z" fill="currentColor" stroke="none"/>
+
+  <!-- Stage 3: Power Amplifier -->
+  <rect x="370" y="120" width="140" height="110"/>
+  <!-- small tuned-tank hint inside PA: coil + variable capacitor -->
+  <path d="M 400,195 C 411,195 411,187 400,187 C 389,187 389,179 400,179 C 411,179 411,171 400,171 C 389,171 389,163 400,163 C 411,163 411,155 400,155" stroke-width="1.6"/>
+  <line x1="420" y1="150" x2="420" y2="200" stroke-width="1.6"/>
+  <line x1="432" y1="160" x2="432" y2="190" stroke-width="1.6"/>
+  <line x1="420" y1="150" x2="432" y2="160" stroke-width="1.6"/>
+  <line x1="420" y1="200" x2="432" y2="190" stroke-width="1.6"/>
+
+  <!-- arrow: PA -> antenna -->
+  <line x1="510" y1="175" x2="545" y2="175"/>
+  <path d="M 545,175 L 534,169 L 534,181 Z" fill="currentColor" stroke="none"/>
+
+  <!-- Antenna -->
+  <line x1="560" y1="175" x2="560" y2="90"/>
+  <line x1="560" y1="90" x2="542" y2="70"/>
+  <line x1="560" y1="90" x2="560" y2="64"/>
+  <line x1="560" y1="90" x2="578" y2="70"/>
+
+  <!-- DC supply bus, common to all stages -->
+  <line x1="70" y1="290" x2="460" y2="290"/>
+
+  <!-- oscillator DC drop -->
+  <line x1="95" y1="290" x2="95" y2="220"/>
+
+  <!-- buffer DC drop -->
+  <line x1="265" y1="290" x2="265" y2="210"/>
+
+  <!-- PA DC drop, broken by the keying point -->
+  <line x1="460" y1="230" x2="460" y2="252"/>
+  <circle cx="460" cy="252" r="2.8" fill="currentColor" stroke="none"/>
+  <line x1="460" y1="272" x2="460" y2="290"/>
+  <circle cx="460" cy="272" r="2.8" fill="currentColor" stroke="none"/>
+  <line x1="460" y1="272" x2="472" y2="250" stroke-width="2"/>
+
+  <!-- battery symbol feeding the bus -->
+  <line x1="70" y1="290" x2="70" y2="270"/>
+  <line x1="58" y1="270" x2="82" y2="270" stroke-width="2.6"/>
+  <line x1="63" y1="258" x2="77" y2="258" stroke-width="5.5"/>
+  <line x1="70" y1="258" x2="70" y2="248"/>
+</g>
+
+<!-- Labels -->
+<g fill="currentColor" stroke="none" font-size="14" text-anchor="middle">
+  <text x="95" y="112">MASTER</text>
+  <text x="95" y="126">OSCILLATOR</text>
+  <text x="95" y="238" font-size="12">crystal&#160;/&#160;stable&#160;LC</text>
+  <text x="95" y="252" font-size="11">low&#160;power &#8212; sets&#160;f</text>
+
+  <text x="265" y="128">BUFFER</text>
+  <text x="265" y="228" font-size="12">isolates&#160;oscillator</text>
+  <text x="265" y="242" font-size="11">from&#160;the&#160;load</text>
+
+  <text x="440" y="112">POWER AMPLIFIER</text>
+  <text x="450" y="246" font-size="12" text-anchor="end">tuned&#160;output&#160;stage</text>
+  <text x="450" y="262" font-size="11" text-anchor="end">delivers&#160;power</text>
+
+  <text x="560" y="52" font-size="13">ANTENNA</text>
+
+  <text x="478" y="256" font-size="11" text-anchor="start">KEY</text>
+  <text x="478" y="270" font-size="10" text-anchor="start">(CW&#160;keying&#160;point)</text>
+
+  <text x="45" y="246" font-size="11" text-anchor="end">B+</text>
+  <text x="70" y="316" font-size="11">DC&#160;supply</text>
+
+  <text x="300" y="352" font-size="12">Each stage drives only the next; the antenna's shifting load</text>
+  <text x="300" y="370" font-size="12">reaches only the power amplifier, never "pulling" the oscillator off frequency.</text>
+</g>
+</svg>

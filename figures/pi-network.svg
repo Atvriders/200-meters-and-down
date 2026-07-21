@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="sans-serif">
+  <defs>
+    <g id="varcap-gnd">
+      <!-- vertical variable capacitor with a ground symbol below it; origin (0,0) is the top connection node -->
+      <line x1="0" y1="0" x2="0" y2="25" stroke="currentColor" stroke-width="2.5" fill="none"/>
+      <line x1="-20" y1="25" x2="20" y2="25" stroke="currentColor" stroke-width="2.5" fill="none"/>
+      <line x1="-20" y1="38" x2="20" y2="38" stroke="currentColor" stroke-width="2.5" fill="none"/>
+      <line x1="0" y1="38" x2="0" y2="60" stroke="currentColor" stroke-width="2.5" fill="none"/>
+      <!-- variable-component arrow through the plates -->
+      <line x1="-24" y1="50" x2="24" y2="12" stroke="currentColor" stroke-width="2" fill="none"/>
+      <polygon points="24,12 15,15 21,22" fill="currentColor" stroke="none"/>
+      <!-- ground symbol -->
+      <line x1="-18" y1="60" x2="18" y2="60" stroke="currentColor" stroke-width="2.5" fill="none"/>
+      <line x1="-12" y1="68" x2="12" y2="68" stroke="currentColor" stroke-width="2.5" fill="none"/>
+      <line x1="-6" y1="76" x2="6" y2="76" stroke="currentColor" stroke-width="2.5" fill="none"/>
+    </g>
+  </defs>
+
+  <!-- PA plate block -->
+  <rect x="20" y="90" width="100" height="80" rx="4" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <text x="70" y="122" font-size="15" fill="currentColor" text-anchor="middle">PA</text>
+  <text x="70" y="142" font-size="15" fill="currentColor" text-anchor="middle">PLATE</text>
+
+  <!-- pi-network dashed boundary -->
+  <rect x="145" y="55" width="275" height="180" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6,5" fill="none"/>
+  <text x="282" y="45" font-size="15" fill="currentColor" text-anchor="middle">&#960;-NETWORK (PI-NETWORK) OUTPUT TANK</text>
+
+  <!-- lead from PA to node A -->
+  <line x1="120" y1="130" x2="170" y2="130" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <circle cx="170" cy="130" r="3.5" fill="currentColor" stroke="none"/>
+
+  <!-- tune (input) shunt capacitor -->
+  <use href="#varcap-gnd" x="170" y="130"/>
+  <text x="205" y="185" font-size="14" fill="currentColor">TUNE</text>
+  <text x="205" y="202" font-size="12" fill="currentColor">(input shunt C)</text>
+
+  <!-- series inductor between node A and node B -->
+  <line x1="170" y1="130" x2="220" y2="130" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <path d="M220,130 q15,-30 30,0 q15,-30 30,0 q15,-30 30,0 q15,-30 30,0"
+        stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <line x1="340" y1="130" x2="390" y2="130" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <text x="280" y="92" font-size="15" fill="currentColor" text-anchor="middle">L</text>
+  <text x="280" y="108" font-size="12" fill="currentColor" text-anchor="middle">(series inductor)</text>
+
+  <!-- node B -->
+  <circle cx="390" cy="130" r="3.5" fill="currentColor" stroke="none"/>
+
+  <!-- load (output) shunt capacitor -->
+  <use href="#varcap-gnd" x="390" y="130"/>
+  <text x="425" y="185" font-size="14" fill="currentColor">LOAD</text>
+  <text x="425" y="202" font-size="12" fill="currentColor">(output shunt C)</text>
+
+  <!-- output lead from node B out to the antenna -->
+  <line x1="390" y1="130" x2="500" y2="130" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <line x1="500" y1="130" x2="500" y2="65" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <line x1="500" y1="65" x2="480" y2="32" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <line x1="500" y1="65" x2="520" y2="32" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <text x="500" y="20" font-size="14" fill="currentColor" text-anchor="middle">ANTENNA</text>
+</svg>
