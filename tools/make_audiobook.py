@@ -30,6 +30,8 @@ from pathlib import Path
 
 import edge_tts
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from tools import figreg
 from tools.narration import NUMBER_WORDS, speak_figures, speak_math, strip_markup
 
