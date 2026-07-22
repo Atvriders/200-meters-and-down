@@ -24,7 +24,7 @@ jobs:
           curl -sSfL --netrc -o audiobook/intro.mp3 "$base/intro.mp3"
           # 8 voices: ryan -> chNN.mp3, the rest -> <voice>-chNN.mp3
           : > urls.txt
-          for i in $(seq -w 0 9); do
+          for i in $(seq -f "%02g" 0 9); do
             echo "$base/ch${i}.mp3 audiobook/ch${i}.mp3" >> urls.txt
             for v in andrew ava sonia william natasha connor emily; do
               echo "$base/${v}-ch${i}.mp3 audiobook/${v}-ch${i}.mp3" >> urls.txt
